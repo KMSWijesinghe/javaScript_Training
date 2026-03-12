@@ -77,6 +77,9 @@
         <div class="orange rainbow"></div>
         <div class="red rainbow"></div>
     </div>
+    <div class="clear-fix"></div>
+    <div class="box"></div>
+
    
 </body>
 <script>
@@ -91,7 +94,16 @@
     var red = document.querySelector(".red");
     
     //console.log(violet);
-    console.log(window.getComputedStyle(violet).background);
+    //console.log(window.getComputedStyle(violet).background);
+
+violetbg = window.getComputedStyle(violet).backgroundColor;
+indigobg = window.getComputedStyle(indigo).backgroundColor;
+
+    var box = document.querySelector(".box");
+
+    violet.addEventListener('click',() => {
+       box.style.backgroundColor = violetbg;
+    })
 
 
 </script>
