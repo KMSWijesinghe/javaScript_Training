@@ -22,3 +22,4 @@ function summarizeCarts(items){
     return `Total : $${total.toFixed(2)} (${count} items there are in the cart)`;
 
 }
+
